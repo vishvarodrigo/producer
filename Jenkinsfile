@@ -15,7 +15,7 @@ pipeline{
 		}
 		stage ('deployment stage'){
 			steps{				
-				sh 'sudo docker ps'
+				sh 'docker ps'
 			}
 		}
 	}
