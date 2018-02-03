@@ -15,8 +15,7 @@ pipeline{
 		}
 		stage ('deployment stage'){
 			steps{
-				sh 'chmod +x gradlew'
-				echo 'deployment stage'
+				sh 'java -jar rabbitmq-producer-service-0.0.1.jar'
 			}
 		}
 	}
