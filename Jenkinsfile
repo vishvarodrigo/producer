@@ -3,12 +3,12 @@ pipeline{
 	stages{
 		stage ('clean stage'){
 			steps{
-				echo 'cleaning stage'
+				sh './gradlew clean'
 			}
 		}
 		stage ('build stage'){
 			steps{
-				echo 'building stage'
+				sh './gradlew build'
 			}
 		}
 		stage ('deployment stage'){
