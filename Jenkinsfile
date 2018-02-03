@@ -15,7 +15,7 @@ pipeline{
 		}
 		stage ('deployment stage'){
 			steps{				
-				sh './gradlew deploy'
+				sh 'sudo docker ps'
 			}
 		}
 	}
