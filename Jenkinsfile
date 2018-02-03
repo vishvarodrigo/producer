@@ -14,9 +14,8 @@ pipeline{
 			}
 		}
 		stage ('deployment stage'){
-			steps{
-				sh 'chmod +x ./build/libs/rabbitmq-producer-service-0.0.1.jar'
-				sh 'java -jar ./build/libs/rabbitmq-producer-service-0.0.1.jar'
+			steps{				
+				sh './gradlew deploy'
 			}
 		}
 	}
