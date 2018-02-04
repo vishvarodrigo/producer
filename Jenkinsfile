@@ -15,7 +15,7 @@ pipeline{
 		}
 		stage ('deployment stage'){
 			steps{				
-				sh 'java -jar ./build/libs/jenkins-pipeline-0.0.1.jar'
+				sh 'sudo nohup java -jar ./build/libs/jenkins-pipeline-0.0.1.jar'
 			}
 		}
 	}
