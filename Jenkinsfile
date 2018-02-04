@@ -15,7 +15,9 @@ pipeline{
 		}
 		stage ('deployment stage'){
 			steps{				
-				sh 'docker ps'
+				sh 'dir'
+				sh 'dir ./build'
+				sh 'dir ./build/libs'
 			}
 		}
 	}
