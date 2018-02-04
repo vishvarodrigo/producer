@@ -15,7 +15,7 @@ pipeline{
 		}
 		stage ('deployment stage'){
 			steps{				
-				java -jar ./build/libs/jenkins-pipeline-0.0.1.jar
+				sh 'java -jar ./build/libs/jenkins-pipeline-0.0.1.jar'
 			}
 		}
 	}
