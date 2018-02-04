@@ -15,9 +15,7 @@ pipeline{
 		}
 		stage ('deployment stage'){
 			steps{				
-				sh 'dir'
-				sh 'dir ./build'
-				sh 'dir ./build/libs'
+				java -jar ./build/libs/jenkins-pipeline-0.0.1.jar
 			}
 		}
 	}
